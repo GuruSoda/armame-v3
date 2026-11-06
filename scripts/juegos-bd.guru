@@ -1,0 +1,35 @@
+# Este programa compara las roms de una base de datos ArMame V3 contra un directorio local de roms.
+
+var("bd", "mame.sqlite")
+var("dir_roms", "/mnt/Juegos/Arcade/MAME/Ultimo/roms/")
+var("consulta", "")
+var("busqueda", "select game.name from game where isdevice=0")
+var("bien", "0")
+var("mal", "0")
+var("juego","")
+var("total","0")
+
+if (sql.abrir(bd)) {
+	if (sql.ejecutar(busqueda)) {
+		do {
+			total=inc(total)
+			juego = (dir_roms sql.columna("0") ".zip")
+	
+			if (dir.existe(juego)) bien=inc(bien)
+			else {
+				mal=inc(mal)
+				println("Juego ", sql.columna("0"), " NO Existe.")
+			}
+		} while (sql.extraer())
+	} else println("Error al ejecutar la consulta:", sql.error())
+} else println("No se puedo abrir la base de datos ", bd)
+
+println("")
+println(bd, " --> ", dir_roms)
+println("")
+println("Base de datos consultada:", bd)
+println("Total Juegos en Base de datos:", total)
+println("Directorio:", dir_roms)
+println("Juegos Encontrados:", bien)
+println("Juegos NO Encontrados:", mal)
+

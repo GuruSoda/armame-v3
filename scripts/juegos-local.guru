@@ -1,0 +1,40 @@
+# Este programa compara un directorio local contra la base de datos ArMame V3
+
+
+var("bd", "mame.sqlite")
+var("dir_roms", "/mnt/Juegos/Arcade/MAME/Ultimo/roms/")
+var("consulta", "")
+var("busqueda", "select id_game from game where name=")
+var("bien", "0")
+var("mal", "0")
+var("juego","")
+
+if (sql.abrir(bd)) {
+	dir.init(dir_roms, "*.zip")
+
+	while (dir.extraer()) {
+		juego = str.delete(dir.nombre(), dec(str.length(dir.nombre()), "4"), "4")
+
+		consulta = (busqueda sql.comillas(juego))
+
+		if (sql.ejecutar(consulta)) {
+			bien = inc(bien)
+		} else {
+			mal = inc(mal)
+			println("ROM ", dir.nombre(), " NO Existe.")
+# 			println(consulta)
+		}
+	}
+}
+
+println("")
+println(dir_roms, " --> ", bd)
+println("")
+if (sql.ejecutar("select count(id_game) from game"))
+		println("Juegos en base:", sql.columna("0"))
+
+println("Encontrados:", bien)
+println("NO Encontrados:", mal)
+println("Directorio:", dir_roms)
+println("Base de datos consultada:", bd)
+
