@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "armamews", "armamews.vcxproj", "{65E73744-202E-41F9-BE30-FF29C6C60296}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "listxml2sqlite", "listxml2sqlite.vcxproj", "{1AF6373B-A566-436B-9616-14A0DBB0E67F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65E73744-202E-41F9-BE30-FF29C6C60296}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65E73744-202E-41F9-BE30-FF29C6C60296}.Debug|Win32.Build.0 = Debug|Win32
+		{65E73744-202E-41F9-BE30-FF29C6C60296}.Release|Win32.ActiveCfg = Release|Win32
+		{65E73744-202E-41F9-BE30-FF29C6C60296}.Release|Win32.Build.0 = Release|Win32
+		{1AF6373B-A566-436B-9616-14A0DBB0E67F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AF6373B-A566-436B-9616-14A0DBB0E67F}.Debug|Win32.Build.0 = Debug|Win32
+		{1AF6373B-A566-436B-9616-14A0DBB0E67F}.Release|Win32.ActiveCfg = Release|Win32
+		{1AF6373B-A566-436B-9616-14A0DBB0E67F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

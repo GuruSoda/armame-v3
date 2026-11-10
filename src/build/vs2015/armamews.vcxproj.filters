@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Librerias">
+      <UniqueIdentifier>{3e1f0194-e35a-4fa5-9d82-e56cf3badd5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Librerias\argtable">
+      <UniqueIdentifier>{ac397516-5b5a-4e26-ad0b-a39168af8eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Librerias\jsoncpp">
+      <UniqueIdentifier>{8ef26bbf-a28d-453b-8bef-9e5ce12ed2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Librerias\GuruHTTP">
+      <UniqueIdentifier>{707ba69d-b3cb-4edf-a97c-d9f945cb3481}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\armamews\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\arg_end.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\arg_file.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\arg_int.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\arg_lit.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\arg_str.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\argtable2.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\getopt.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\argtable\getopt1.c">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\sqlite\sqlite3.c">
+      <Filter>Source Files\Librerias</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Librerias\jsoncpp\jsoncpp.cpp">
+      <Filter>Source Files\Librerias\jsoncpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Librerias\argtable\argtable2.h">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Librerias\argtable\getopt.h">
+      <Filter>Source Files\Librerias\argtable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Librerias\sqlite\sqlite3.h">
+      <Filter>Source Files\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Librerias\jsoncpp\json.h">
+      <Filter>Source Files\Librerias\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\armamews.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\modelomame.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Librerias\GuruHttp\Guruhttp.hpp">
+      <Filter>Source Files\Librerias\GuruHTTP</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
